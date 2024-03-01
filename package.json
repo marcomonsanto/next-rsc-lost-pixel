@@ -1,0 +1,41 @@
+{
+  "name": "storybook-rsc-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "pnpm storybook",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lost-pixel:update": "npx lost-pixel update",
+    "lost-pixel:run": "npx run lost-pixel"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "@storybook/addon-essentials": "8.0.0-rc.0",
+    "@storybook/addon-links": "8.0.0-rc.0",
+    "@storybook/blocks": "8.0.0-rc.0",
+    "@storybook/jest": "^0.2.3",
+    "@storybook/nextjs": "8.0.0-rc.0",
+    "@storybook/react": "8.0.0-rc.0",
+    "@storybook/test": "8.0.0-rc.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "msw": "2",
+    "msw-storybook-addon": "2.0.0--canary.122.06f0c92.0",
+    "storybook": "8.0.0-rc.0",
+    "storybook-addon-module-mock": "^1.1.5",
+    "typescript": "^5"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
